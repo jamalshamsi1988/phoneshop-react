@@ -36,11 +36,11 @@ import up from "../Images/up.svg";
 
         <img src={image} alt="phone"/>
         <h3>{name}</h3>
-        <p>{cost}</p>
+        <p>{cost} {counter ? `* ${counter} = ${counter * Number(cost.split(" ")[0])} $` : ""}</p>
 
         <div className={styles.counter}>
 
-          <img className={counter ? "" : styles.deactive} src={down} alt="down" onClick={this.downHandler}   />
+          <img className={!counter &&  styles.deactive} src={down} alt="down" onClick={this.downHandler}   />
           <span>{counter}</span>
           <img src={up} alt="up" onClick={this.upHnadler}   />
 
