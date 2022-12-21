@@ -40,7 +40,7 @@ import up from "../Images/up.svg";
 
         <div className={styles.counter}>
 
-          <img className={!counter &&  styles.deactive} src={down} alt="down" onClick={this.downHandler}   />
+          <img className={!counter ?  styles.deactive : ""} src={down} alt="down" onClick={this.downHandler}   />
           <span>{counter}</span>
           <img src={up} alt="up" onClick={this.upHnadler}   />
 

@@ -1,8 +1,10 @@
 .container img{
     width: 300px;
+    height: 200px;
 }
 
 .container{
+    width: 300px;
     border-radius: 10px;
     background-color: #ececec;
     margin: 25px 25px 20px;
@@ -32,6 +34,7 @@
     width: 20px;
     margin: 20px;
     cursor: pointer;
+    height: fit-content;
     
 }
 

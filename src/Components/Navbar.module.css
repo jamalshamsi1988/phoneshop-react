@@ -11,13 +11,17 @@
     display: flex;
 }
 
-.list li{
+.list li {
     padding: 15px;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
-.list li:hover{
+.list li a{
+    color: #fff;
+    text-decoration: none;
+}
+.list li a:hover{
     color: grey;
 
 }
