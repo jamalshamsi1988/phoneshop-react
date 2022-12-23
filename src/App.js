@@ -16,7 +16,14 @@ import NotFound from './Components/NotFound';
         <Navbar/>
         <Routes>
           <Route path="/products" element={<Products />} />
-          <Route path="/products/aboutus" element={<AboutUs />} />
+
+          {/* Nested Route */}
+
+          <Route path="/products/aboutus/*" element={<AboutUs />}>
+          <Route path='programmers' element={<h1>Programmers</h1>}/>
+            <Route path='drivers' element={<h1>Drivers</h1>}/>
+            </Route>
+            
           <Route path='/products/:id' element={<DetailsPage/>}/>
           <Route path="/" element={<Landing />}  />
           <Route path='/notfound' element={<NotFound/>} />

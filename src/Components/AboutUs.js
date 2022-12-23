@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link,Outlet} from 'react-router-dom';
 
  const AboutUs =()=> {
   
@@ -11,9 +11,19 @@ import { useNavigate } from 'react-router-dom';
     return (
       <div>
         <h1>About Us</h1>
+        <ul>
+          <li><Link to="programmers">Programmers</Link></li>
+          <li><Link to="drivers">Drivers</Link></li>
+        </ul>
+        {/* where show the new componenet(programmers & drivers) */}
+        <Outlet/>
         <button onClick={clickHandler}>Go Home Page</button>
       </div>
     )
   }
 
+
 export default AboutUs;
+
+
+
