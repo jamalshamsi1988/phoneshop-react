@@ -1,8 +1,11 @@
 import React from 'react';
 import { useNavigate,Link,Outlet} from 'react-router-dom';
+import useTitle from '../hooks/useTitle';
 
  const AboutUs =()=> {
   
+  useTitle("AboutUs");
+
     const navigate=useNavigate();
 
     const clickHandler =()=>{

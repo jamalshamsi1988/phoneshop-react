@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import useTitle from '../hooks/useTitle';
 
 import Card from './Card';
 import styles from '../Components/Products.module.css';
 
 
  class Products extends Component {
+  
     constructor(props){
+     
         super(props);
         this.state={
             products:[]
