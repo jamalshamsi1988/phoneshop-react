@@ -8,12 +8,14 @@ import Products from './Components/Products';
 import AboutUs from './Components/AboutUs';
 import DetailsPage from './Components/DetailsPage';
 import NotFound from './Components/NotFound';
+import  SignUp from './Components/SignUp';
 
  class App extends Component {
   render() {
     return (
       <div>
         <Navbar/>
+       
         <Routes>
           <Route path="/products" element={<Products />} />
 
@@ -28,7 +30,7 @@ import NotFound from './Components/NotFound';
           <Route path="/" element={<Landing />}  />
           <Route path='/notfound' element={<NotFound/>} />
           <Route path='/*' element={ <Navigate to="/notfound"/>} />
-
+          <Route path='/signup' element={ <SignUp />} />
         </Routes>
         <Footer />
        
