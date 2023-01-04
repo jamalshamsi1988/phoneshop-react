@@ -9,6 +9,7 @@ import AboutUs from './Components/AboutUs';
 import DetailsPage from './Components/DetailsPage';
 import NotFound from './Components/NotFound';
 import  SignUp from './Components/SignUp';
+import Login from './Components/Login';
 
  class App extends Component {
   render() {
@@ -31,6 +32,7 @@ import  SignUp from './Components/SignUp';
           <Route path='/notfound' element={<NotFound/>} />
           <Route path='/*' element={ <Navigate to="/notfound"/>} />
           <Route path='/signup' element={ <SignUp />} />
+          <Route path='/login' element={ <Login />} />
         </Routes>
         <Footer />
        

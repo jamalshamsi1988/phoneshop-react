@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styles from "../Components/Navbar.module.css";
 import logo from "../Images/shop2.png";
+import Login from './Login';
 
 const Navbar = () => {
   return (
@@ -13,6 +14,7 @@ const Navbar = () => {
           <li><Link to="/products">Products</Link> </li>
           <li><Link to="/products/aboutus">About Us</Link></li>
           <li><Link to="/signup">Sign Up</Link></li>
+          <li><Link to="/login">Login</Link></li>
 
         </ul>
       </div>
