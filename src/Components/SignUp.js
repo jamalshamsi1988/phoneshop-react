@@ -1,7 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import { ToastContainer} from 'react-toastify';
 import { Link } from 'react-router-dom';
-// import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import { validate } from './validate';
 import {notify} from './toast';
 import styles from "../Components/SignUp.module.css";

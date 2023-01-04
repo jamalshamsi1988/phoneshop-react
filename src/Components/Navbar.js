@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import styles from "../Components/Navbar.module.css";
 import logo from "../Images/shop2.png";
-import Login from './Login';
 
 const Navbar = () => {
   return (
